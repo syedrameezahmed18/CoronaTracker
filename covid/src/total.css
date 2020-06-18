@@ -1,0 +1,239 @@
+.mainpage{
+    height:1000px;
+    
+}
+.thecov{
+    background: url("./images/corona.jpg");
+    background-size: cover;
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:white;
+}
+.mainp{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.subp{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+.header{
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255,255,255,0.8);
+    color:green;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    
+}
+.leftsided {
+    width:200px;
+    font-size: 34px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftsided p a{
+    text-decoration: none;
+    color:green;
+}
+.adjust{
+    margin-top: -5%;
+}
+.rightsided{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    font-family: 'Lato', sans-serif;
+}
+.rightsided p a{
+    font-size: 20px;
+    font-weight: 400;
+    color:darkgreen;
+    text-decoration: none;
+}
+.rightsided p:hover{
+    transform: scale(1.1);
+    color:black;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.btn{
+    z-index: -0;
+}
+.fixedcov{
+    height:1000px;
+    background: url("images/covalt.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    
+}
+.statdemo{
+    height: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.statdemo p.s{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
+.coronacount{
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.4);
+}
+.top{
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bottom{
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.leftportion{
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.fame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.fame p{
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 5%;
+}
+.cw1,.cw2,.cw3{
+    height:80px;
+    width: 40px;
+    
+}
+.cw1{
+    color:green;
+}
+.cw2{
+    color:yellow;
+}
+.cw3{
+    color:red;
+}
+.lk{
+    color:green;
+}
+.lj{
+    color:yellow;
+}
+.lp{
+    color:red;
+}
+.famespec{
+    width:350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left:-5%;
+}
+.famesup{
+    width:350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left:-5%;
+}
+/*----------------------------*/
+
+.orb{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.orb p{
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.orb .rer{
+    height:80px;
+    width:40px;
+    margin-right: 2%;
+    margin-top: -1%;
+    animation: truespin 2s infinite linear 
+}
+@keyframes truespin{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.thecarousel{
+    margin-top: 5%;
+}
+.carousel-caption{
+    font-family: 'Lato', sans-serif;
+}
+.foote{
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,lightgreen,green);
+    margin-top: 5%;
+}
+.foote p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-decoration: none;
+}
+.foote p:hover{
+    color:green;
+    cursor: pointer;
+}
+.foote p a{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    text-decoration: none;
+}
+.foote p a:hover{
+    color:green;
+}
