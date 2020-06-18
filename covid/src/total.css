@@ -35,6 +35,7 @@
     position: absolute;
     width: 100%;
     z-index: 1;
+    border-bottom: 3px solid darkgreen;
     
 }
 .leftsided {
@@ -236,4 +237,94 @@
 }
 .foote p a:hover{
     color:green;
+}
+.aboutpage{
+    height:auto;
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
+.precaution{
+    
+    display: flex;
+    flex-direction: column;
+    height:800px;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    
+}
+.prec{
+    font-size: 36px;
+    color:black;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.manage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.lo{
+    margin-right:3%;
+    margin-top: 2%;
+    
+}
+.precaution .listed{
+    height:400px;
+    background: linear-gradient(to right,green,lightgreen);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:70%;
+    padding:10%;
+    box-shadow: 5px 5px green;
+}
+.listed .dual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dual h2{
+    font-size: 26px;
+
+}
+.faq{
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+.card{
+    background:rgba(255,255,255,0.7);  
+}
+.prev{
+    font-size: 36px;
+    color:black;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.prevention{
+    display: flex;
+    flex-direction: column;
+    height:600px;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    
+}
+.prevention .listed{
+    height:400px;
+    background: linear-gradient(to right,orange,yellow);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:70%;
+    padding:10%;
+    box-shadow: 5px 5px yellow;
 }

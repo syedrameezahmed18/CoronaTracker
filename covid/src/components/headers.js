@@ -10,7 +10,7 @@ var Head = () => {
                 <p><Link to ="/">PakCovid</Link></p>
             </div>
             <div className="rightsided">
-                <p><Link to ="/about">About</Link></p>
+                <p><Link to ="/about">Info</Link></p>
                 <p><Link to ="/stats">Stats</Link></p>
                 <p><Link to="/help">Help</Link></p>
             </div>
