@@ -328,3 +328,78 @@
     padding:10%;
     box-shadow: 5px 5px yellow;
 }
+.symp,.desc{
+    font-size: 36px;
+    color:black;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 4%;
+}
+.timetxt{
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    color:red;
+}
+.timetxt1{
+    color:blue;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+}
+.timetxt2{
+    color:green;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+}
+.timetxt3{
+    color:grey;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+}
+.carousel-fade{
+    width:50%;
+    height:300px;
+    
+}
+.leftcar{
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.jumbotron{
+    width:48%;
+    height:400px;
+    
+    background: none;
+    color:black;
+    font-family: 'Lato', sans-serif;
+    
+}
+.lead{
+    font-size: 18px;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:500px;
+    align-items: center;
+    margin-top: 5%;
+}
+.accordion{
+    width:80%;
+    font-family: 'Lato', sans-serif;
+    color:black;
+}
+.card-header{
+    background: white;
+}
+.card-header button{
+    text-align: center;
+}
+.gg{
+    font-weight: 400;
+    font-size: 22px;
+}
