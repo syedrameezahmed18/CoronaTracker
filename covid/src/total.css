@@ -258,7 +258,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right,lightgreen,green);
-    margin-top: 5%;
+    
 }
 .foote p {
     font-size: 24px;
@@ -449,6 +449,9 @@
 .statpage{
     height:auto;
     font-family: 'Lato', sans-serif;
+    background: url("images/alert.jpg");
+    background-size:cover;
+    background-attachment: fixed;
 }
 .headerstat{
     height:600px;
@@ -508,7 +511,9 @@
     align-items: center;
     margin-top: 5%;
     width:90%;
+    
 }
+
 .charted{
     width:50%;
     height:500px;
@@ -523,5 +528,17 @@
     height:"350px";
 }
 .detailstat{
-    margin-top: 3%;
+    height:700px;
+    animation: lazer 4s infinite linear;
+}
+@keyframes lazer{
+    0%{
+        background: rgba(255,255,255,0.4);
+    }
+    50%{
+        background: rgba(236, 190, 190, 0.4);
+    }
+    100%{
+        background: rgba(255,255,255,0.4);
+    }
 }

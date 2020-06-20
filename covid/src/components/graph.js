@@ -38,7 +38,7 @@ class Graph extends Component {
                     height={"350px"} 
                     options={{maintainAspectRatio:false}}
                     />
-                    <button className="btn btn-outline-secondary" onClick={this.props.graphswitch}>
+                    <button className="btn btn-primary" onClick={this.props.graphswitch}>
                         Switch
                     </button>
        
@@ -52,7 +52,7 @@ class Graph extends Component {
                     height={"350px"} 
                     options={{maintainAspectRatio:false}}
                     />
-                    <button className="btn btn-outline-secondary" onClick={this.props.graphswitch}>
+                    <button className="btn btn-primary" onClick={this.props.graphswitch}>
                         Switch
                     </button>
                 </Fragment>

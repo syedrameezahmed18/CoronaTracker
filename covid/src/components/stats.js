@@ -55,12 +55,13 @@ class Stat extends Component {
             <Roll left>
                 <div className="overt">
                 
-                <p className="sad">Total Confirmed Cases </p>
+                <p className="sad" >Total Confirmed Cases </p>
             </div></Roll>
             <Roll left><p className="sad1">{pakdata.TotalConfirmed}</p></Roll>
         </div>
-       <LightSpeed right> <div className="detailstat">
-            <Fade bottom><p className="desc">Complete stats</p></Fade>
+       
+       <div className="detailstat">
+            <Fade bottom><p className="desc" style={{color:"red"}}>Complete stats</p></Fade>
             <div className="visuals">
 
            
@@ -92,7 +93,7 @@ class Stat extends Component {
            </div>
             </div>
         </div>
-        </LightSpeed>
+        
     </div>)
           );
     }
