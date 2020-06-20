@@ -1,5 +1,5 @@
 .mainpage{
-    height:1000px;
+    height:auto;
     
 }
 .thecov{
@@ -38,6 +38,19 @@
     border-bottom: 3px solid darkgreen;
     
 }
+.headerred{
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(218, 164, 164, 0.8);
+    color:red;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 3px solid darkred;
+}
 .leftsided {
     width:200px;
     font-size: 34px;
@@ -47,9 +60,21 @@
     justify-content: space-around;
     align-items: center;
 }
-.leftsided p a{
+.maindefault{
     text-decoration: none;
     color:green;
+}
+.maindefault:hover{
+    text-decoration: none;
+    color:green;
+}
+.maindefaultred{
+    text-decoration: none;
+    color:red;
+}
+.maindefaultred:hover{
+    text-decoration: none;
+    color:red;
 }
 .adjust{
     margin-top: -5%;
@@ -62,10 +87,28 @@
     width: 35%;
     font-family: 'Lato', sans-serif;
 }
-.rightsided p a{
+.default{
     font-size: 20px;
     font-weight: 400;
     color:darkgreen;
+    text-decoration: none;
+}
+.default:hover{
+    color:darkgreen;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.reded:hover{
+    color:darkred;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.reded{
+    font-size: 20px;
+    font-weight: 400;
+    color:darkred;
     text-decoration: none;
 }
 .rightsided p:hover{
@@ -402,4 +445,83 @@
 .gg{
     font-weight: 400;
     font-size: 22px;
+}
+.statpage{
+    height:auto;
+    font-family: 'Lato', sans-serif;
+}
+.headerstat{
+    height:600px;
+    background: url("images/blood.jpg");
+    background-size: cover;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerstat{
+    font-size: 40px;
+    font-weight: 400;
+    word-spacing: 3px;
+}
+.headerstat p{
+    animation:redglow 3s infinite linear;
+}
+@keyframes redglow{
+    0%{
+        color:white;
+    }
+    50%{
+        color:red;
+    }
+    100%{
+        color:white;
+    }
+}
+.sad1{
+    animation:redglow 3s infinite linear;
+}
+.blackout{
+    height:800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+.spinner-border{
+    width:50px;
+    height:50px;
+    margin-top: -1%;
+}
+.blackout p{
+    font-size: 36px;
+    margin-left: 1.5%;
+}
+.visuals{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    width:90%;
+}
+.charted{
+    width:50%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+    justify-content: space-around;
+}
+.dheit{
+    height:"350px";
+}
+.detailstat{
+    margin-top: 3%;
 }
