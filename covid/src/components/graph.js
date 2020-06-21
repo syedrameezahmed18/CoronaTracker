@@ -20,9 +20,15 @@ class Graph extends Component {
                             "red",
                             "yellow",
                             "green"
+                        ],
+                        defaultFontColor:[
+                            "red",
+                            "yellow",
+                            "green"
                         ]
                     }
                 ]
+                
             }
         }
     }

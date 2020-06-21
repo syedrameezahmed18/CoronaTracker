@@ -7,6 +7,7 @@ import {FaMedkit,FaBookDead} from "react-icons/fa";
 import {FiAlertTriangle} from "react-icons/fi";
 import LightSpeed from "react-reveal/LightSpeed";
 import Fade from "react-reveal/Fade";
+import CountUp from "react-countup";
 
 
 class Stat extends Component {
@@ -16,8 +17,8 @@ class Stat extends Component {
         this.state={
             pakdata:[],
             isLoading:true,
-            want:true
-           
+            want:true,
+            worlddata:[]
         }
     }
 
@@ -30,12 +31,15 @@ class Stat extends Component {
                     console.log(data.Countries[126]);
                     this.setState({pakdata:data.Countries[126]})
                     this.setState({isLoading:false})
+                    
                 })
-        fetch("https://api.covid19api.com/country/pakistan/status/confirmed/live?from=2020-03-01T00:00:00Z&to=2020-06-19T00:00:00Z")   
+        let worldapi="https://api.covid19api.com/world/total";       
+        fetch(worldapi)   
             .then (resp => resp.json())
                 .then (newdata => {
                     console.log(newdata);
-                    
+                    this.setState({worlddata:newdata})
+                    console.log(newdata.TotalConfirmed)
                 })
     }
    reverse = () => {
@@ -43,7 +47,7 @@ class Stat extends Component {
    }
 
     render() { 
-        let {pakdata} = this.state;
+        let {pakdata,worlddata} = this.state;
         return (
         
             this.state.isLoading ? (
@@ -57,7 +61,7 @@ class Stat extends Component {
                 
                 <p className="sad" >Total Confirmed Cases </p>
             </div></Roll>
-            <Roll left><p className="sad1">{pakdata.TotalConfirmed}</p></Roll>
+            <Roll left><p className="sad1"><CountUp end={pakdata.TotalConfirmed} duration={2}/></p></Roll>
         </div>
        
        <div className="detailstat">
@@ -92,6 +96,25 @@ class Stat extends Component {
                      </div>
            </div>
             </div>
+        </div>
+        <div className="worldcrisis">
+        <h2>World Stats</h2>
+            <LightSpeed left><div className="topped">
+            
+            <div className="info">
+            <p className="sup"><CountUp end={worlddata.TotalConfirmed} duration={3}/></p>
+            <p className="unsup">Worldwide cases</p>
+            </div>
+            <div className="info">
+            <p className="sup"><CountUp end={worlddata.TotalRecovered} duration={3}/></p>
+            <p className="unsup">Worldwide recovered</p>
+            </div>
+            <div className="info">
+            <p className="sup"><CountUp end={worlddata.TotalDeaths} duration={3}/></p>
+            <p className="unsup">Worldwide Deaths</p>
+            </div>
+            </div>
+            </LightSpeed>
         </div>
         
     </div>)

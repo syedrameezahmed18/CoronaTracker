@@ -533,12 +533,44 @@
 }
 @keyframes lazer{
     0%{
-        background: rgba(255,255,255,0.4);
+        background: rgba(0,0,0,0.4);
     }
     50%{
         background: rgba(236, 190, 190, 0.4);
     }
     100%{
-        background: rgba(255,255,255,0.4);
+        background: rgba(0,0,0,0.4);
     }
+}
+.worldcrisis{
+    color:white;
+    font-family: 'Lato', sans-serif;
+    margin-top: 5%;
+    height:1400px;
+    background: rgba(0,0,0,0.8);
+    
+}
+.worldcrisis h2{
+    text-align: center;
+}
+.topped{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.info{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:100px;
+    align-items: center;
+}
+.unsup{
+    font-size: 18px;
+}
+.sup{
+    font-size: 24px;
 }
