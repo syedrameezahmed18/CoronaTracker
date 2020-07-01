@@ -23,19 +23,23 @@ class Countries extends Component {
                 })
     }
     render(){
-    return(
-        <div className="everything">
-            {   this.state.cname.map((count)=> {
-                return(
-               <div className="rod">
-               <p className="cnames">{count.Country}</p> 
-               <p className="caseses">{count.TotalConfirmed}</p>
-             </div>  
-                )
+            const filtered = this.state.cname.filter(count => {
+            return count.Country.toLowerCase().includes(this.props.thefilter.toLowerCase());
             })
-            }
-        </div>
-    )
+            return(
+                <div className="everything">
+                    {   
+                        filtered.map((fill)=>{
+                        return(
+                            <div className="rod">
+                                <p className="cnames">{fill.Country}</p> 
+                                <p className="caseses">{fill.TotalConfirmed}</p>
+                            </div>  
+                        )
+                    })
+                    }
+                </div>
+            )
     }
 
 }

@@ -20,7 +20,8 @@ class Stat extends Component {
             pakdata:[],
             isLoading:true,
             want:true,
-            worlddata:[]
+            worlddata:[],
+            filtered:""
         }
     }
 
@@ -46,7 +47,10 @@ class Stat extends Component {
    reverse = () => {
        this.setState({want:!this.state.want})
    }
-
+   gamechange=(e)=>{
+    console.log(e.target.value);
+    this.setState({filtered:e.target.value})
+}
     render() { 
         let {pakdata,worlddata} = this.state;
         return (
@@ -127,8 +131,8 @@ class Stat extends Component {
                        />
                </div>
 
-             <Searcher />  
-             <Countries />
+             <Searcher eventval={this.gamechange}/>  
+             <Countries thefilter={this.state.filtered}/>
         </div>
         
         
