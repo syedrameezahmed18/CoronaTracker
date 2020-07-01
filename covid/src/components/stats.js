@@ -8,6 +8,8 @@ import {FiAlertTriangle} from "react-icons/fi";
 import LightSpeed from "react-reveal/LightSpeed";
 import Fade from "react-reveal/Fade";
 import CountUp from "react-countup";
+import Searcher from "./searcher.js";
+import Countries from "./countries.js";
 
 
 class Stat extends Component {
@@ -27,7 +29,6 @@ class Stat extends Component {
         fetch("https://api.covid19api.com/summary")
             .then(resp => resp.json())
                 .then(data => {
-                    
                     console.log(data.Countries[126]);
                     this.setState({pakdata:data.Countries[126]})
                     this.setState({isLoading:false})
@@ -115,7 +116,21 @@ class Stat extends Component {
             </div>
             </div>
             </LightSpeed>
+            <div className="chartedspec">
+                   
+                   <Graphed 
+                       actived={parseInt((worlddata.TotalConfirmed)-(worlddata.TotalRecovered)-(worlddata.TotalDeaths))}
+                       recovered={worlddata.TotalRecovered}
+                       death={worlddata.TotalDeaths}
+                       graphswitch={this.reverse}
+                       revsignal={this.state.want}
+                       />
+               </div>
+
+             <Searcher />  
+             <Countries />
         </div>
+        
         
     </div>)
           );

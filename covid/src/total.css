@@ -546,7 +546,7 @@
     color:white;
     font-family: 'Lato', sans-serif;
     margin-top: 5%;
-    height:1400px;
+    height:auto;
     background: rgba(0,0,0,0.8);
     
 }
@@ -573,4 +573,45 @@
 }
 .sup{
     font-size: 24px;
+}
+.chartedspec{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:500px;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+.searched{
+    margin-top: 3%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.searched input{
+    width:30%;
+    margin-right: 2%;
+}
+.everything{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.rod{
+    
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    font-size: 26px;
+    width:80%;
+    margin-left: 10%;
+    
 }
