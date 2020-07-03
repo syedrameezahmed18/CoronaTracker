@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Scroll from "./scroll.js";
 
 class Countries extends Component {
     
@@ -7,7 +8,7 @@ class Countries extends Component {
         super()
         this.state={
             ccs:[],
-            cname:[],
+            cname:[],   
             ccase:[]
         }
     }
@@ -26,7 +27,9 @@ class Countries extends Component {
             const filtered = this.state.cname.filter(count => {
             return count.Country.toLowerCase().includes(this.props.thefilter.toLowerCase());
             })
+            
             return(
+                <Scroll className="margined">
                 <div className="everything">
                     {   
                         filtered.map((fill)=>{
@@ -39,7 +42,9 @@ class Countries extends Component {
                     })
                     }
                 </div>
+                </Scroll>
             )
+            
     }
 
 }
